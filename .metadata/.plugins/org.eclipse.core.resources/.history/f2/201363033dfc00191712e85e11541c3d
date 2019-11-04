@@ -1,0 +1,59 @@
+package quizapp;
+
+import java.util.Scanner;
+
+public class QuizApllication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a character : ");
+		char a = sc.next().charAt(0);
+		
+		System.out.println("a = " + a);
+		
+	}
+
+}
+
+class Question
+{
+	
+	String question;
+	String option1;
+	String option2;
+	String option3;
+	String option4;
+	Answer answer;
+	public Question(String question, String option1, String option2, String option3, String option4, Answer answer) {
+		super();
+		this.question = question;
+		this.option1 = option1;
+		this.option2 = option2;
+		this.option3 = option3;
+		this.option4 = option4;
+		this.answer = answer;
+	}
+	
+	
+	
+}
+
+class Answer
+{
+	
+	String answer;
+
+	public Answer(String answer) {
+		super();
+		this.answer = answer;
+	}
+
+	public String getAnswer() {
+		return answer;
+	}
+	
+	
+	
+}

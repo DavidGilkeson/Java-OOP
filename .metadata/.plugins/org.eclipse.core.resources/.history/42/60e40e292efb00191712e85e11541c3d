@@ -1,0 +1,22 @@
+
+public class FinalTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class D1
+{
+	
+	int a;
+	int b;
+	
+	void m1()
+	{
+		
+		System.out.println("m1 of D1");
+	}
+}

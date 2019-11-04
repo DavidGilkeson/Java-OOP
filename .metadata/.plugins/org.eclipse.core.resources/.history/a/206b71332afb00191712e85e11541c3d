@@ -1,0 +1,42 @@
+/*
+ * 
+ * Static Variables and Static members
+ * 
+ * Static members only belong to the class and 
+ * are not part of the object, When the object is created in memory
+ * the static members will not be a part of it
+ * They are stored separately and shared by all the objects
+ * 
+ */
+public class StaticMemebers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		C1 obj1 = new C1();
+		C1 obj2 = new C1();
+		C1 obj3 = new C1();
+		C1 obj4 = new C1();
+		
+		System.out.println("Count is : " + C1.count);
+		
+	}
+
+}
+
+class C1
+{
+	
+	static int count = 0;
+	
+	/* 
+	 * A constructor in Java is a special method that is used to initialize objects.
+	 * The constructor is called when an object of a class is created.
+	 */
+	C1()
+	{
+		count++; //implementing 
+		
+	}
+}
